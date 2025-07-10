@@ -131,7 +131,7 @@ add_custom_command(
 )
 add_custom_target(abc_target DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/extlib-abc/build/libabc-pic.a)
 add_dependencies(stp abc_target)
-set(stp_link_libs ${MINISAT_LIBRARIES} ${CMAKE_CURRENT_BINARY_DIR}/extlib-abc/build/libabc-pic.a tinfo)
+set(stp_link_libs ${MINISAT_LIBRARIES} ${CMAKE_CURRENT_BINARY_DIR}/extlib-abc/build/libabc-pic.a)
 
 if (USE_CRYPTOMINISAT)
     if (STATICCOMPILE)
